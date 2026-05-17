@@ -629,6 +629,7 @@
     }
 
     .gallery-grid img{
+      cursor: zoom-in;
       width:100%;
       height:76px;
       object-fit:cover;
@@ -952,14 +953,14 @@
           <h2><span class="big-icon">👥</span> Our Community</h2>
           
 <div class="gallery-grid">
-<img src="community1.JPG" alt="Dance community photo">
-<img src="community2.jpeg" alt="Dance community photo">
-<img src="community3.JPG" alt="Dance community photo">
-<img src="community4.jpeg" alt="Dance community photo">
-<img src="community5.jpg" alt="Dance community photo">
-<img src="community6.jpeg" alt="Dance community photo">
-<img src="community7.jpeg" alt="Dance community photo">
-<img src="community8.jpg" alt="Dance community photo">
+<img src="community1.JPG" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community2.jpeg" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community3.JPG" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community4.jpeg" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community5.jpg" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community6.jpeg" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community7.jpeg" alt="Dance community photo" onclick="openLightbox(this.src)">
+<img src="community8.jpg" alt="Dance community photo" onclick="openLightbox(this.src)">
 </div>
 
           <a class="card-button" href="#gallery">See More Photos ▣</a>
@@ -993,5 +994,37 @@
 
   <div class="bottom-wave"></div>
   <footer class="footer-tagline">Let's Dance, Move with Passion —♡</footer>
+
+  <div id="lightbox" onclick="closeLightbox()" style="
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.88);
+    justify-content:center;
+    align-items:center;
+    padding:20px;">
+
+    <img id="lightbox-img" src="" style="
+      max-width:95%;
+      max-height:95%;
+      border-radius:12px;
+      box-shadow:0 0 30px rgba(255,255,255,0.25);">
+  </div>
+
+  <script>
+    function openLightbox(src){
+      document.getElementById('lightbox').style.display='flex';
+      document.getElementById('lightbox-img').src=src;
+    }
+
+    function closeLightbox(){
+      document.getElementById('lightbox').style.display='none';
+    }
+  </script>
+
 </body>
 </html>
