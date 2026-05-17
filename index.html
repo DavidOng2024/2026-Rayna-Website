@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dance For Fun Academy</title>
+  <title>Let's Dance Academy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -270,7 +270,7 @@
     .main-title{
       font-family:'Great Vibes', cursive;
       color:var(--rose);
-      font-size:clamp(78px, 9vw, 122px);
+      font-size:clamp(64px, 7vw, 102px);
       line-height:.84;
       font-weight:400;
       letter-spacing:.005em;
@@ -603,16 +603,22 @@
 
     .schedule-row{
       display:grid;
-      grid-template-columns:95px 1fr 116px;
-      gap:8px;
-      padding:16px 0;
+      grid-template-columns:95px 1.8fr 1.2fr;
+      gap:14px;
+      padding:18px 0;
       border-bottom:1px solid rgba(163,73,85,.12);
       font-size:13px;
-      align-items:center;
+      line-height:1.5;
+      align-items:start;
     }
 
     .schedule-row:last-child{border-bottom:none}
-    .schedule-row strong{font-size:13px}
+    .schedule-row strong{
+      font-size:13px;
+      white-space:nowrap;
+      display:block;
+      padding-top:2px;
+    }
     .schedule-row span:nth-child(2){color:var(--rose);font-weight:600}
 
     .gallery-grid{
@@ -651,8 +657,9 @@
 
     .contact-line p{
       margin:0;
-      font-size:14px;
-      line-height:1.35;
+      font-size:13px;
+      line-height:1.45;
+      white-space:nowrap;
     }
 
     .card-button{
@@ -682,6 +689,12 @@
       font-weight:400;
       z-index:3;
     }
+
+    
+    #pricing .schedule-row span{
+      white-space: nowrap;
+    }
+
 
     @media (max-width: 1100px){
       .topbar{padding:0 26px}
@@ -755,7 +768,7 @@
     <div class="logo">
       <div class="logo-mark"><span></span></div>
       <div class="logo-text">
-        <div class="logo-script">Dance For Fun</div>
+        <div class="logo-script">Let's Dance</div>
         <div class="logo-academy">ACADEMY</div>
         <div class="logo-line"></div>
       </div>
@@ -782,7 +795,7 @@
       </div>
 
       <div class="hero-center">
-        <h1 class="main-title">Dance<br>For Fun</h1>
+        <h1 class="main-title">Let's Dance</h1>
         <div class="academy">ACADEMY</div>
         <div class="divider"></div>
 
@@ -875,18 +888,64 @@
               <span>Beginner Class</span>
               <span>7:00 PM – 9:00 PM</span>
             </div>
-            <div class="schedule-row">
-              <strong>Sunday</strong>
-              <span>Social Dance Night</span>
-              <span>7:00 PM – 9:00 PM</span>
-            </div>
+
             <div class="schedule-row">
               <strong>Location</strong>
-              <span>Clubhouse 1 / CH7</span>
-              <span>Laguna Woods</span>
+              <span>Clubhouse 1, Multifamily Room<br>(next to swimming pool)</span>
+              <span>24232 Calle Aragon<br>Laguna Woods, CA 92637</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong>Sunday</strong>
+              <span>Open Dance</span>
+              <span>7:00 PM – 9:00 PM</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong>Location</strong>
+              <span>Clubhouse 7 Ballroom</span>
+              <span>24111 Moulton Pkwy<br>Laguna Woods, CA 92637</span>
             </div>
           </div>
           <a class="card-button" href="#classes">View Full Schedule ▣</a>
+        </section>
+
+        <section class="info-card" id="pricing">
+          <h2><span class="big-icon">💲</span> Class Fees</h2>
+
+          <div class="schedule-box">
+            <div class="schedule-row">
+              <strong></strong>
+              <span>First Visiting Class</span>
+              <span>FREE</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong></strong>
+              <span>Walk‑in Per Session</span>
+              <span>$7</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong></strong>
+              <span>Package – 10 Sessions</span>
+              <span>$50</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong></strong>
+              <span>Annual Membership - Laguna Woods Resident</span>
+              <span>$220</span>
+            </div>
+
+            <div class="schedule-row">
+              <strong></strong>
+              <span>Annual Membership - Non‑Resident</span>
+              <span>$240</span>
+            </div>
+          </div>
+
+          <a class="card-button" href="#pricing">Join Let's Dance ♡</a>
         </section>
 
         <section class="info-card" id="gallery">
@@ -897,8 +956,10 @@
 <img src="community2.jpeg" alt="Dance community photo">
 <img src="community3.JPG" alt="Dance community photo">
 <img src="community4.jpeg" alt="Dance community photo">
-<img src="community1.JPG" alt="Dance community photo">
-<img src="community2.jpeg" alt="Dance community photo">
+<img src="community5.jpg" alt="Dance community photo">
+<img src="community6.jpeg" alt="Dance community photo">
+<img src="community7.jpeg" alt="Dance community photo">
+<img src="community8.jpg" alt="Dance community photo">
 </div>
 
           <a class="card-button" href="#gallery">See More Photos ▣</a>
@@ -910,17 +971,9 @@
             <div class="contact-line">
               <div class="icon">☎</div>
               <div>
-                <h4>Phone</h4>
-                <p>Rayna Sorida: 310-339-3554</p>
-                <p>Patrick Chiu: 949-306-4134</p>
-              </div>
-            </div>
-
-            <div class="contact-line">
-              <div class="icon">✉</div>
-              <div>
-                <h4>Email</h4>
-                <p>patnchiu@gmail.com</p>
+                <h4>Phone / Email</h4>
+                <p>Rayna Sorida: 310-339-3554 / lagunawoodsrayna@gmail.com</p>
+                <p>Patrick Chiu: 949-306-4134 / patnchiu@gmail.com</p>
               </div>
             </div>
 
@@ -928,17 +981,17 @@
               <div class="icon">⌖</div>
               <div>
                 <h4>Location</h4>
-                <p>Laguna Woods Village Community Center<br>Laguna Woods, CA</p>
+                <p>Clubhouse 1, Multifamily Room<br>(next to swimming pool)<br>Laguna Woods Village<br>24232 Calle Aragon<br>Laguna Woods, CA 92637</p>
               </div>
             </div>
           </div>
-          <a class="card-button" href="mailto:patnchiu@gmail.com">Get in Touch ♡</a>
+          <a class="card-button" href="mailto:lagunawoodsrayna@gmail.com">Get in Touch ♡</a>
         </section>
       </div>
     </section>
   </main>
 
   <div class="bottom-wave"></div>
-  <footer class="footer-tagline">Dance for Fun, Move with Passion —♡</footer>
+  <footer class="footer-tagline">Let's Dance, Move with Passion —♡</footer>
 </body>
 </html>
